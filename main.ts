@@ -11,4 +11,6 @@ if (nginx_symlink == null) {
 
 await Deno.symlink(nginx_file, nginx_symlink, {type: "file"});
 
+console.log(`%c Symbolic link created in [ ${nginx_symlink} ] `, 'background: #222; color: #bada55')
+
 // profit?!
