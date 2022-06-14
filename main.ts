@@ -1,5 +1,7 @@
 import { basename } from "./deps.ts";
 
+const guessed_nginx_server_dir_based_on_os =  Deno.build.os === "darwin" ? "/opt/homebrew/etc/nginx/servers" : "/etc/nginx/sites-enabled";
+
 const SUCCESS_MESSAGE_STYLE = "background: #222; color: #bada55";
 const ERROR_MESSAGE_STYLE = "background: #222; color: #ff0000";
 
@@ -7,7 +9,7 @@ const nginx_server_dir = localStorage.getItem("NGINX_SERVER_DIR");
 if (nginx_server_dir === null) {
   const prompted_nginx_server_dir = prompt(
     "Please enter the path to the nginx server directory",
-    "/opt/homebrew/etc/nginx/servers",
+    guessed_nginx_server_dir_based_on_os,
   );
   if (prompted_nginx_server_dir == null) {
     console.error("%cNo nginx server directory provided", ERROR_MESSAGE_STYLE),
