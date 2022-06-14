@@ -1,3 +1,3 @@
 # Nginx project Linker
 
-- Create dymbolic link for your project's nginx configuration file
+- Utility tool to create dymbolic link for your project's nginx configuration file for deployment

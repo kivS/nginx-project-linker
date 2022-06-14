@@ -4,7 +4,7 @@ if (nginx_file == null) console.log("we need a file yo..."), Deno.exit(1);
 
 console.log(`Processing nginx file: [ ${nginx_file} ]`);
 
-const nginx_symlink = prompt("What's the name for the symbolic link file:");
+const nginx_symlink = prompt("Name of nginx symbolic link file?", nginx_file);
 if (nginx_symlink == null) {
   console.log("we need to know where to put the file..."), Deno.exit(1);
 }
