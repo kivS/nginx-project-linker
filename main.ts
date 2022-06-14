@@ -1,6 +1,8 @@
 import { basename } from "./deps.ts";
 
-const guessed_nginx_server_dir_based_on_os =  Deno.build.os === "darwin" ? "/opt/homebrew/etc/nginx/servers" : "/etc/nginx/sites-enabled";
+const guessed_nginx_server_dir_based_on_os = Deno.build.os === "darwin"
+  ? "/opt/homebrew/etc/nginx/servers"
+  : "/etc/nginx/sites-enabled";
 
 const SUCCESS_MESSAGE_STYLE = "background: #222; color: #bada55";
 const ERROR_MESSAGE_STYLE = "background: #222; color: #ff0000";
