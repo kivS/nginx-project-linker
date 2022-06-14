@@ -8,7 +8,7 @@ for deployment
 - Run directly
 
   ```bash
-  deno run --allow-write --allow-read https://deno.land/x/nginx_linker@v1.0.1/main.ts <nginx_conf_file>
+  deno run --allow-write --allow-read https://deno.land/x/nginx_linker/main.ts <nginx_conf_file>
   ```
 
   ```bash
@@ -19,7 +19,7 @@ for deployment
 - Install as script
 
   ```bash
-  deno install --allow-read --allow-write https://deno.land/x/nginx_linker@v1.0.0/main.ts
+  deno install --allow-read --allow-write https://deno.land/x/nginx_linker/main.ts
   ```
 
   ```bash
