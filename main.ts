@@ -63,7 +63,7 @@ if (
   confirmation &&
   ["y", "yes", "ya"].includes(confirmation?.toLowerCase()) == false
 ) {
-  console.log("Aborting..."), Deno.exit(1);
+  console.log("Aborting..."), Deno.exit(0);
 }
 
 await Deno.symlink(nginx_file_absolute_path, nginx_destination_file, {
