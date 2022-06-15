@@ -1,0 +1,5 @@
+echo "Running pre-commit hook in $(pwd)"
+
+exec deno fmt 
+
+exec git add .
