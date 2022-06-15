@@ -1,4 +1,4 @@
-        import { basename } from "./deps.ts";
+import { basename } from "./deps.ts";
 
 const guessed_nginx_server_dir_based_on_os = Deno.build.os === "darwin"
   ? "/opt/homebrew/etc/nginx/servers"
