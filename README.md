@@ -3,8 +3,6 @@
 Utility tool to create symbolic link for your project's nginx configuration file
 for deployment
 
-TODO: hook to lint and fmt on pre-commit
-
 ## How to use
 
 - Run directly
