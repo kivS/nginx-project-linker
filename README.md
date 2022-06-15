@@ -1,7 +1,9 @@
 # Nginx project Linker
 
-Utility tool to create dymbolic link for your project's nginx configuration file
+Utility tool to create symbolic link for your project's nginx configuration file
 for deployment
+
+TODO: hook to lint and fmt on pre-commit
 
 ## How to use
 
